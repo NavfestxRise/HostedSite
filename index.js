@@ -54,8 +54,6 @@ document.getElementById("submit").onclick = () =>{
 		"Phone_Number":document.getElementById("RISE_P4_Phone").value,
 		
 	});
-	
-	console.log(event);
 
 	/* event 8*/
 	event = AllEvents.child("FROM DAEDALUS’ WORKSHOP:Building Empires");
@@ -213,7 +211,7 @@ document.getElementById("submit").onclick = () =>{
 	newSchoolEntry.child("Name of Principle").set(document.getElementById("Principle's_Name").value);
 	newSchoolEntry.child("School Name").set(document.getElementById("SchoolName").value);
 	alert("Registeration Completed");
-	<!-- window.location.replace("http://www.navfest.in/");-->
+	window.location.replace("http://www.navfest.in/");
 }
 
 let SwitchN=()=>{
