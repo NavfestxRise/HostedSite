@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link href="inc/lib/fontawesome/css/all.min.css.css" rel="stylesheet">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="form-landing-img-left">
+        <img src="med/logo.png" alt="">
+    </div>
+    <div class="form-landing-img-right">
+        <img src="med/rise_logo.png" alt="">
+    </div>
+    <center>
+        <div class="form-landing">
+            <h2>Registrations</h2>
+            <div>
+                <div class="form-fields mainRegister">
+                    <div class="input-wrap">
+                        <i class="fal fa-school"></i>
+                        <input type="text" id="SchoolName" placeholder="School Name" class="field">
+                    </div>
+                    <div class="input-wrap">
+                    <i class="fal fa-user"></i>
+                    <input type="text" id="Principle's_Name" placeholder="Principal's Name">
+                    </div>
+                    <div class="input-wrap">
+                    <i class="fal fa-envelope-open"></i>
+                    <input type="email" id="School_Email" placeholder="School's Email">
+                    </div>
+                    <div class="input-wrap">
+                    <i class="fal fa-user"></i>
+                    <input type="text" name="text" id="Teacher_Name" placeholder="Teacher Incharge">
+                    </div>
+                    <div class="input-wrap">
+                    <i class="fal fa-envelope-open"></i>
+                    <input type="email" id="Teacher_Email" placeholder="Teacher Incharge Email">
+                    </div>
+                    <div class="input-wrap">
+                    <i class="fal fa-phone-alt"></i>
+                    <input type="tel" name="" id="Number_of_Teacher" placeholder="Teacher Incharge Number">
+                    </div>
+                    <center><button onclick="toCheck()" id="Next" class="Next button">Next</button></center>
+                </div>
+            </div>
+			<div class="form-fields checkboxes" style="display: none;">
+				<h3>Please note:</h3>
+				<h3>Participation in atleast one domain of RISE is mandatory for all schools.</h3>
+				<h3>To win the championship trophy school must take part in all the events of NavFest and the mega event RISE</h3>
+				<h4>Please select the events you would like to take part in.</h4>
+				<div class="flex-parent">
+					<div class="content-1">
+						<div class="input-wrap">
+						<p style="width: 300px;">Event 1: Maestros of the Royal Court</p>
+						<input type="checkbox" id="event1" name="" class="eventcheck" value="event1" style="width: 20%;"> 
+						</div>
+						<div class="input-wrap">
+						<p style="width: 300px;">Event 2: Folk Serendipity: The Orchestra</p>
+						<input type="checkbox" id="event2" name="" class="eventcheck" value="event2" style="width: 20%;"> 
+						</div>
+						<div class="input-wrap">
+						<p style="width: 300px;">Event 3: The Colosseum: TV Show</p>
+						<input type="checkbox" id="event3" name="" class="eventcheck" value="event3" style="width: 20%;"> 
+						</div>
+						<div class="input-wrap">
+						<p style="width: 300px;">Event 4: The Final Verdict: Debate</p>
+						<input type="checkbox" id="event4" name="" class="eventcheck" value="event4" style="width: 20%;"> 
+						</div> 
+					</div>
+					<div class="content-1">
+						<div class="input-wrap">
+							<p style="width: 300px;">Event 5: Kautilya: The Business Mogul</p>
+							<input type="checkbox" id="event5" name="" class="eventcheck" value="event5" style="width: 20%;"> 
+						</div>
+						<div class="input-wrap">
+							<p style="width: 300px;">Event 6: Tarka Shastra: The Quiz</p>
+							<input type="checkbox" id="event6" name="" class="eventcheck" value="event6" style="width: 20%;"> 
+						</div>
+						<div class="input-wrap">
+							<p style="width: 300px;">Event 7: Reviving the Legends: Declamation</p>
+							<input type="checkbox" id="event7" name="" class="eventcheck" value="event7" style="width: 20%;"> 
+						</div>
+						<div class="input-wrap">
+							<p style="width: 300px;">Event 8: From Daedalus' Workshop: Minecraft: Building Empires</p>
+							<input type="checkbox" id="event8" name="" class="eventcheck" value="event8" style="width: 20%;"> 
+						</div>
+					</div>
+					</div>
+				<button onclick="toMain()" class="frmbtn button">Previous</button>
+				<button onclick="toEvents()" class="frmbtn button">Next</button>
+			</div>
+			<div class="form-fields event1" style="display: none;">
+				<h1>Event 1: Maestros of the Royal Court</h1>
+				<div class="input-wrap">
+                    <i class="fal fa-user"></i>
+                    <input type="text" id="MOTRC_P1_Name" placeholder="Name of First Participant">
+				</div>
+				<div class="input-wrap">
+                    <i class="fal fa-envelope-open"></i>
+                    <input type="text" id="MOTRC_P1_Mail" placeholder="E-mail of First Participant">
+				</div>
+				<div class="input-wrap">
+                    <i class="fal fa-phone-alt"></i>
+                    <input type="text" id="MOTRC_P1_Phone" placeholder="Phone Number of First Participant">
+				</div>
+
+				<div class="input-wrap">
+                    <i class="fal fa-user"></i>
+                    <input type="text" id="MOTRC_P2_Name" placeholder="Name of Second Participant">
+				</div>
+				<div class="input-wrap">
+                    <i class="fal fa-envelope-open"></i>
+                    <input type="text" id="MOTRC_P2_Mail" placeholder="E-mail of Second Participant">
+				</div>
+				<div class="input-wrap">
+                    <i class="fal fa-phone-alt"></i>
+                    <input type="text" id="MOTRC_P2_Phone" placeholder="Phone Number of Second Participant">
+				</div>
+				<button onclick="SwitchP()" class="frmbtn button">Previous</button>
+				<button onclick="SwitchN()" class="frmbtn button">Next</button>
+			</div>
+		<div class="form-fields event2" style="display: none;">
+			<h1>Event 2: Folk Serendipity: The Orchestra</h1>
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="FS_P1_Name" placeholder="Name of First Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="FS_P1_Mail" placeholder="E-mail of First Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="FS_P1_Phone" placeholder="Phone Number of First Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="FS_P2_Name" placeholder="Name of Second Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="FS_P2_Mail" placeholder="E-mail of Second Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="FS_P2_Phone" placeholder="Phone Number of Second Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="FS_P3_Name" placeholder="Name of Third Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="FS_P3_Mail" placeholder="E-mail of Third Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="FS_P3_Phone" placeholder="Phone Number of Third Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="FS_P4_Name" placeholder="Name of Fourth Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="FS_P4_Mail" placeholder="E-mail of Fourth Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="FS_P4_Phone" placeholder="Phone Number of Fourth Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="FS_P5_Name" placeholder="Name of Fifth Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="FS_P5_Mail" placeholder="E-mail of Fifth Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="FS_P5_Phone" placeholder="Phone Number of Fifth Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="FS_P6_Name" placeholder="Name of Sixth Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="FS_P6_Mail" placeholder="E-mail of Sixth Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="FS_P6_Phone" placeholder="Phone Number of Sixth Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="FS_P7_Name" placeholder="Name of Seventh Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="FS_P7_Mail" placeholder="E-mail of Seventh Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="FS_P7_Phone" placeholder="Phone Number of Seventh Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="FS_P8_Name" placeholder="Name of Eight Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="FS_P8_Mail" placeholder="E-mail of Eight Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="FS_P8_Phone" placeholder="Phone Number of Eight Participant">
+			</div>
+			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
+			<button onclick="SwitchN()" class="frmbtn button">Next</button>
+		</div>
+
+		<div class="form-fields event3" style="display: none;">
+			<h1>Event 3: The Colosseum: TV Show</h1>
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="TCTSE_P1_Name" placeholder="Name of First Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="TCTSE_P1_Mail" placeholder="E-mail of First Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="TCTSE_P1_Phone" placeholder="Phone Number of First Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="TCTSE_P2_Name" placeholder="Name of Second Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="TCTSE_P2_Mail" placeholder="E-mail of Second Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="TCTSE_P2_Phone" placeholder="Phone Number of Second Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="TCTSE_P3_Name" placeholder="Name of Third Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="TCTSE_P3_Mail" placeholder="E-mail of Third Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="TCTSE_P3_Phone" placeholder="Phone Number of Third Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="TCTSE_P4_Name" placeholder="Name of Fourth Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="TCTSE_P4_Mail" placeholder="E-mail of Fourth Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="TCTSE_P4_Phone" placeholder="Phone Number of Fourth Participant">
+			</div>
+			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
+			<button onclick="SwitchN()" class="frmbtn button">Next</button>
+		</div>
+		
+		<div class="form-fields event4" style="display: none;">
+			<h1>Event 4: The Final Verdict: Debate</h1>
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="TFV_P1_Name" placeholder="Name of Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="TFV_P1_Mail" placeholder="E-mail of Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="TFV_P1_Phone" placeholder="Phone Number of Participant">
+			</div>
+			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
+			<button onclick="SwitchN()" class="frmbtn button">Next</button>
+		</div>
+
+		<div class="form-fields event5" style="display: none;">
+			<h1>Event 5: Kautilya: The Business Mogul</h1>
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="KTBM_P1_Name" placeholder="Name of First Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="KTBM_P1_Mail" placeholder="E-mail of First Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="KTBM_P1_Phone" placeholder="Phone Number of First Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="KTBM_P2_Name" placeholder="Name of Second Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="KTBM_P2_Mail" placeholder="E-mail of Second Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="KTBM_P2_Phone" placeholder="Phone Number of Second Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="KTBM_P3_Name" placeholder="Name of Third Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="KTBM_P3_Mail" placeholder="E-mail of Third Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="KTBM_P3_Phone" placeholder="Phone Number of Third Participant">
+			</div>
+			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
+			<button onclick="SwitchN()" class="frmbtn button">Next</button>
+		</div>
+
+		<div class="form-fields event6" style="display: none;">
+			<h1>Event 6: Tarka Shastra: The Quiz</h1>
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="TS_P1_Name" placeholder="Name of Junior Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="TS_P1_Mail" placeholder="E-mail of Junior Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="TS_P1_Phone" placeholder="Phone Number of Junior Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="TS_P2_Name" placeholder="Name of Senior Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="TS_P2_Mail" placeholder="E-mail of Senior Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="TS_P2_Phone" placeholder="Phone Number of Senior Participant">
+			</div>
+			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
+			<button onclick="SwitchN()" class="frmbtn button">Next</button>
+		</div>
+
+		<div class="form-fields event7" style="display: none;">
+			<h1>Event 7: Reviving the Legends: Declamation</h1>
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="RLD_P1_Name" placeholder="Name of Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="RLD_P1_Mail" placeholder="E-mail of Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="RLD_P1_Phone" placeholder="Phone Number of Participant">
+			</div>
+			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
+			<button onclick="SwitchN()" class="frmbtn button">Next</button>
+		</div>
+
+		<div class="form-fields event8" style="display: none;">
+			<h1>Event 8: From Daedalus' Workshop: Minecraft: Building Empires</h1>
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="FDWBE_P1_Name" placeholder="Name of First Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="FDWBE_P1_Mail" placeholder="E-mail of First Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="FDWBE_P1_Phone" placeholder="Phone Number of First Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="FDWBE_P2_Name" placeholder="Name of Second Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="FDWBE_P2_Mail" placeholder="E-mail of Second Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="FDWBE_P2_Phone" placeholder="Phone Number of Second Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="FDWBE_P3_Name" placeholder="Name of Third Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="FDWBE_P3_Mail" placeholder="E-mail of Third Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="FDWBE_P3_Phone" placeholder="Phone Number of Third Participant">
+			</div>
+			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
+			<button onclick="SwitchN()" class="frmbtn button">Next</button>
+		</div>
+
+		<div class="form-fields event9" style="display: none;">
+			<h1>Rise</h1>
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="RISE_P1_Name" placeholder="Name of First Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="RISE_P1_Mail" placeholder="E-mail of First Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="RISE_P1_Phone" placeholder="Phone Number of First Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="RISE_P2_Name" placeholder="Name of Second Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="RISE_P2_Mail" placeholder="E-mail of Second Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="RISE_P2_Phone" placeholder="Phone Number of Second Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="RISE_P3_Name" placeholder="Name of Third Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="RISE_P3_Mail" placeholder="E-mail of Third Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="RISE_P3_Phone" placeholder="Phone Number of Third Participant">
+			</div>
+
+			<div class="input-wrap">
+				<i class="fal fa-user"></i>
+				<input type="text" id="RISE_P4_Name" placeholder="Name of Fourth Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-envelope-open"></i>
+				<input type="text" id="RISE_P4_Mail" placeholder="E-mail of Fourth Participant">
+			</div>
+			<div class="input-wrap">
+				<i class="fal fa-phone-alt"></i>
+				<input type="text" id="RISE_P4_Phone" placeholder="Phone Number of Fourth Participant">
+			</div>
+			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
+			<button onclick="SwitchN()" class="frmbtn button">Next</button>
+		</div>
+
+		<div class="form-fields event10" style="display: none;">
+			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
+			<button id="submit" class="button">submit</button>
+		</div>
+		
+        </div>
+    </center>
+		<div class="form-fields" style="display: none;">
+		</div>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

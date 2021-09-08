@@ -240,7 +240,7 @@ let SwitchN=()=>{
 						if (cfield.tagName == "INPUT") {
 							if (cfield.value == "") {
 								console.log("foo")
-								alert("all values for selected events must be filled!");
+								alert("Please fill out all the fields.");
 								b = 1;
 								break;
 							}
