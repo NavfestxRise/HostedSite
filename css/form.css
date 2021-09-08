@@ -133,3 +133,30 @@ input::placeholder{
     display: flex;
     width: 90%;
 }
+
+@media screen and (max-width:900px){
+    .form-landing-img-left{
+        display: none;
+    }
+
+    .form-landing-img-right{
+        display: none;
+    }
+
+    .form-landing{
+        height: 50vh;
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .form-fields{
+        width: 100%;
+    }
+    .flex-parent{
+        display: block;
+        width: 100%;
+    }
+}
