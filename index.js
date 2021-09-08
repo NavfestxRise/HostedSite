@@ -27,7 +27,7 @@ document.getElementById("submit").onclick = () =>{
 	let AllEvents = newSchoolEntry.child("Events");
 	// events are kept in reverse order as firebase reverses them in the right order
 	/* Rise */
-	let event = AllEvents.child("FROM DAEDALUS’ WORKSHOP:Building Empires");
+	let event = AllEvents.child("Rise");
 	event.child("Participant 1").set({
 		"Name":document.getElementById("RISE_P1_Name").value,
 		"Email":document.getElementById("RISE_P1_Mail").value,
