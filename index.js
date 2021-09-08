@@ -211,6 +211,7 @@ document.getElementById("submit").onclick = () =>{
 	newSchoolEntry.child("Name of Principle").set(document.getElementById("Principle's_Name").value);
 	newSchoolEntry.child("School Name").set(document.getElementById("SchoolName").value);
 	alert("Registeration Completed");
+	window.location.replace("http://www.navfest.in/");
 }
 
 let SwitchN=()=>{
