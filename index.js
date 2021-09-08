@@ -1,12 +1,12 @@
 // Your web app's Firebase configuration
-var firebaseConfig = {
-	apiKey: "AIzaSyBgjKE9rfaEjk9_kZveMrypMrm3ui4wAkk",
-	authDomain: "navrise-1b985.firebaseapp.com",
-	databaseURL: "https://navrise-1b985-default-rtdb.asia-southeast1.firebasedatabase.app",
-	projectId: "navrise-1b985",
-	storageBucket: "navrise-1b985.appspot.com",
-	messagingSenderId: "126798372781",
-	appId: "1:126798372781:web:1a60c46f5bdab5dd510b24"
+const firebaseConfig = {
+	apiKey: "AIzaSyAV38QhiE1QX7tkqp8SkDzzdHceYMN2Czk",
+	authDomain: "navfestxrise.firebaseapp.com",
+	databaseURL: "https://navfestxrise-default-rtdb.firebaseio.com",
+	projectId: "navfestxrise",
+	storageBucket: "navfestxrise.appspot.com",
+	messagingSenderId: "1088540129842",
+	appId: "1:1088540129842:web:fc3e67d322cb949adc1a2b"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
