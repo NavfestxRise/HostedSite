@@ -25,71 +25,80 @@
                         <input type="text" id="SchoolName" placeholder="School Name" class="field">
                     </div>
                     <div class="input-wrap">
-                    <i class="fal fa-user"></i>
-                    <input type="text" id="Principle's_Name" placeholder="Principal's Name">
+						<i class="fal fa-user"></i>
+						<input type="text" id="Principle's_Name" placeholder="Principal's Name">
                     </div>
                     <div class="input-wrap">
-                    <i class="fal fa-envelope-open"></i>
-                    <input type="email" id="School_Email" placeholder="School's Email">
+						<i class="fal fa-envelope-open"></i>
+						<input type="email" id="School_Email" placeholder="School's Email">
                     </div>
                     <div class="input-wrap">
-                    <i class="fal fa-user"></i>
-                    <input type="text" name="text" id="Teacher_Name" placeholder="Teacher Incharge">
+						<i class="fal fa-user"></i>
+						<input type="text" name="text" id="Teacher_Name" placeholder="Teacher Incharge">
                     </div>
                     <div class="input-wrap">
-                    <i class="fal fa-envelope-open"></i>
-                    <input type="email" id="Teacher_Email" placeholder="Teacher Incharge Email">
+						<i class="fal fa-envelope-open"></i>
+						<input type="email" id="Teacher_Email" placeholder="Teacher Incharge Email">
                     </div>
                     <div class="input-wrap">
-                    <i class="fal fa-phone-alt"></i>
-                    <input type="tel" name="" id="Number_of_Teacher" placeholder="Teacher Incharge Number">
+						<i class="fal fa-phone-alt"></i>
+						<input type="tel" name="" id="Number_of_Teacher" placeholder="Teacher Incharge Number">
                     </div>
-                    <center><button onclick="toCheck()" id="Next" class="Next button">Next</button></center>
+                    <center>
+						<button onclick="toCheck()" id="Next" class="Next button">Next</button>
+					</center>
                 </div>
             </div>
 			<div class="form-fields checkboxes" style="display: none;">
-				<h3>Please note:</h3>
-				<h3>Participation in atleast one domain of RISE is mandatory for all schools.</h3>
-				<h3>To win the championship trophy school must take part in all the events of NavFest and the mega event RISE</h3>
-				<h4>Please select the events you would like to take part in.</h4>
-				<div class="flex-parent">
-					<div class="content-1">
-						<div class="input-wrap">
-						<p style="width: 300px;">Event 1: Maestros of the Royal Court</p>
-						<input type="checkbox" id="event1" name="" class="eventcheck" value="event1" style="width: 20%;"> 
+				<b>
+					Please note:
+					<br>
+					Participation in atleast one domain of RISE is mandatory for all schools.
+					<br>
+					To win the championship trophy school must take part in all the events of NavFest and the mega event RISE
+					<br>
+					Please select the events you would like to take part in:
+				</b>
+				<center>
+					<div class="flex-parent">
+						<div class="content-1">
+							<div class="input-wrap">
+							<p style="width: 300px;">Event 1: Maestros of the Royal Court</p>
+							<input type="checkbox" id="event1" name="" class="eventcheck" value="event1" style="width: 20%;"> 
+							</div>
+							<div class="input-wrap">
+							<p style="width: 300px;">Event 2: Folk Serendipity: The Orchestra</p>
+							<input type="checkbox" id="event2" name="" class="eventcheck" value="event2" style="width: 20%;"> 
+							</div>
+							<div class="input-wrap">
+							<p style="width: 300px;">Event 3: The Colosseum: TV Show</p>
+							<input type="checkbox" id="event3" name="" class="eventcheck" value="event3" style="width: 20%;"> 
+							</div>
+							<div class="input-wrap">
+							<p style="width: 300px;">Event 4: The Final Verdict: Debate</p>
+							<input type="checkbox" id="event4" name="" class="eventcheck" value="event4" style="width: 20%;"> 
+							</div> 
 						</div>
-						<div class="input-wrap">
-						<p style="width: 300px;">Event 2: Folk Serendipity: The Orchestra</p>
-						<input type="checkbox" id="event2" name="" class="eventcheck" value="event2" style="width: 20%;"> 
+						<div class="content-1">
+							<div class="input-wrap">
+								<p style="width: 300px;">Event 5: Kautilya: The Business Mogul</p>
+								<input type="checkbox" id="event5" name="" class="eventcheck" value="event5" style="width: 20%;"> 
+							</div>
+							<div class="input-wrap">
+								<p style="width: 300px;">Event 6: Tarka Shastra: The Quiz</p>
+								<input type="checkbox" id="event6" name="" class="eventcheck" value="event6" style="width: 20%;"> 
+							</div>
+							<div class="input-wrap">
+								<p style="width: 300px;">Event 7: Reviving the Legends: Declamation</p>
+								<input type="checkbox" id="event7" name="" class="eventcheck" value="event7" style="width: 20%;"> 
+							</div>
+							<div class="input-wrap">
+								<p style="width: 300px;">Event 8: From Daedalus' Workshop: Minecraft: Building Empires</p>
+								<input type="checkbox" id="event8" name="" class="eventcheck" value="event8" style="width: 20%;"> 
+							</div>
 						</div>
-						<div class="input-wrap">
-						<p style="width: 300px;">Event 3: The Colosseum: TV Show</p>
-						<input type="checkbox" id="event3" name="" class="eventcheck" value="event3" style="width: 20%;"> 
-						</div>
-						<div class="input-wrap">
-						<p style="width: 300px;">Event 4: The Final Verdict: Debate</p>
-						<input type="checkbox" id="event4" name="" class="eventcheck" value="event4" style="width: 20%;"> 
-						</div> 
 					</div>
-					<div class="content-1">
-						<div class="input-wrap">
-							<p style="width: 300px;">Event 5: Kautilya: The Business Mogul</p>
-							<input type="checkbox" id="event5" name="" class="eventcheck" value="event5" style="width: 20%;"> 
-						</div>
-						<div class="input-wrap">
-							<p style="width: 300px;">Event 6: Tarka Shastra: The Quiz</p>
-							<input type="checkbox" id="event6" name="" class="eventcheck" value="event6" style="width: 20%;"> 
-						</div>
-						<div class="input-wrap">
-							<p style="width: 300px;">Event 7: Reviving the Legends: Declamation</p>
-							<input type="checkbox" id="event7" name="" class="eventcheck" value="event7" style="width: 20%;"> 
-						</div>
-						<div class="input-wrap">
-							<p style="width: 300px;">Event 8: From Daedalus' Workshop: Minecraft: Building Empires</p>
-							<input type="checkbox" id="event8" name="" class="eventcheck" value="event8" style="width: 20%;"> 
-						</div>
-					</div>
-					</div>
+				</center>
 				<button onclick="toMain()" class="frmbtn button">Previous</button>
 				<button onclick="toEvents()" class="frmbtn button">Next</button>
 			</div>
@@ -107,6 +116,10 @@
                     <i class="fal fa-phone-alt"></i>
                     <input type="text" id="MOTRC_P1_Phone" placeholder="Phone Number of First Participant">
 				</div>
+				<div class="input-wrap">
+                    <i class="fal fa-users-class"></i>
+                    <input type="text" id="MOTRC_P1_Std" placeholder="Class of First Participant">
+				</div>
 
 				<div class="input-wrap">
                     <i class="fal fa-user"></i>
@@ -120,6 +133,12 @@
                     <i class="fal fa-phone-alt"></i>
                     <input type="text" id="MOTRC_P2_Phone" placeholder="Phone Number of Second Participant">
 				</div>
+				<div class="input-wrap">
+                    <i class="fal fa-users-class"></i>
+                    <input type="text" id="MOTRC_P2_Std" placeholder="Class of Second Participant">
+				</div>
+				<br>
+				<br>
 				<button onclick="SwitchP()" class="frmbtn button">Previous</button>
 				<button onclick="SwitchN()" class="frmbtn button">Next</button>
 			</div>
@@ -137,7 +156,10 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="FS_P1_Phone" placeholder="Phone Number of First Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="FS_P1_Std" placeholder="Class of First Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
 				<input type="text" id="FS_P2_Name" placeholder="Name of Second Participant">
@@ -150,7 +172,10 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="FS_P2_Phone" placeholder="Phone Number of Second Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="FS_P2_Std" placeholder="Class of Second Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
 				<input type="text" id="FS_P3_Name" placeholder="Name of Third Participant">
@@ -163,7 +188,10 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="FS_P3_Phone" placeholder="Phone Number of Third Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="FS_P3_Std" placeholder="Class of Third Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
 				<input type="text" id="FS_P4_Name" placeholder="Name of Fourth Participant">
@@ -176,7 +204,10 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="FS_P4_Phone" placeholder="Phone Number of Fourth Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="FS_P4_Std" placeholder="Class of Fourth Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
 				<input type="text" id="FS_P5_Name" placeholder="Name of Fifth Participant">
@@ -189,7 +220,10 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="FS_P5_Phone" placeholder="Phone Number of Fifth Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="FS_P5_Std" placeholder="Class of Fifth Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
 				<input type="text" id="FS_P6_Name" placeholder="Name of Sixth Participant">
@@ -202,7 +236,10 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="FS_P6_Phone" placeholder="Phone Number of Sixth Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="FS_P6_Std" placeholder="Class of Sixth Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
 				<input type="text" id="FS_P7_Name" placeholder="Name of Seventh Participant">
@@ -215,7 +252,10 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="FS_P7_Phone" placeholder="Phone Number of Seventh Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="FS_P7_Std" placeholder="Class of Seventh Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
 				<input type="text" id="FS_P8_Name" placeholder="Name of Eight Participant">
@@ -228,6 +268,12 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="FS_P8_Phone" placeholder="Phone Number of Eight Participant">
 			</div>
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="FS_P8_Std" placeholder="Class of Eight Participant">
+			</div>
+			<br>
+			<br>
 			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
 			<button onclick="SwitchN()" class="frmbtn button">Next</button>
 		</div>
@@ -246,7 +292,10 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="TCTSE_P1_Phone" placeholder="Phone Number of First Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="TCTSE_P1_Std" placeholder="Class of First Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
 				<input type="text" id="TCTSE_P2_Name" placeholder="Name of Second Participant">
@@ -259,7 +308,10 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="TCTSE_P2_Phone" placeholder="Phone Number of Second Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="TCTSE_P2_Std" placeholder="Class of Second Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
 				<input type="text" id="TCTSE_P3_Name" placeholder="Name of Third Participant">
@@ -272,7 +324,10 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="TCTSE_P3_Phone" placeholder="Phone Number of Third Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="TCTSE_P3_Std" placeholder="Class of Third Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
 				<input type="text" id="TCTSE_P4_Name" placeholder="Name of Fourth Participant">
@@ -285,6 +340,12 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="TCTSE_P4_Phone" placeholder="Phone Number of Fourth Participant">
 			</div>
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="TCTSE_P4_Std" placeholder="Class of Fourth Participant">
+			</div>
+			<br>
+			<br>
 			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
 			<button onclick="SwitchN()" class="frmbtn button">Next</button>
 		</div>
@@ -303,6 +364,12 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="TFV_P1_Phone" placeholder="Phone Number of Participant">
 			</div>
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="TFV_P1_Std" placeholder="Class of Participant">
+			</div>
+			<br>
+			<br>
 			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
 			<button onclick="SwitchN()" class="frmbtn button">Next</button>
 		</div>
@@ -321,7 +388,10 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="KTBM_P1_Phone" placeholder="Phone Number of First Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="KTBM_P1_Std" placeholder="Class of First Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
 				<input type="text" id="KTBM_P2_Name" placeholder="Name of Second Participant">
@@ -334,10 +404,13 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="KTBM_P2_Phone" placeholder="Phone Number of Second Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="KTBM_P2_Std" placeholder="Class of First Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
-				<input type="text" id="KTBM_P3_Name" placeholder="Name of Third Participant">
+				<input type="text" id="KTBM_P3_Name" placeholder="Name of Second Participant">
 			</div>
 			<div class="input-wrap">
 				<i class="fal fa-envelope-open"></i>
@@ -347,6 +420,12 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="KTBM_P3_Phone" placeholder="Phone Number of Third Participant">
 			</div>
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="KTBM_P3_Std" placeholder="Class of Third Participant">
+			</div>
+			<br>
+			<br>
 			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
 			<button onclick="SwitchN()" class="frmbtn button">Next</button>
 		</div>
@@ -365,7 +444,10 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="TS_P1_Phone" placeholder="Phone Number of Junior Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="TS_P1_Std" placeholder="Class of Junior Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
 				<input type="text" id="TS_P2_Name" placeholder="Name of Senior Participant">
@@ -378,6 +460,12 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="TS_P2_Phone" placeholder="Phone Number of Senior Participant">
 			</div>
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="TS_P2_Std" placeholder="Class of Senior Participant">
+			</div>
+			<br>
+			<br>
 			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
 			<button onclick="SwitchN()" class="frmbtn button">Next</button>
 		</div>
@@ -396,6 +484,12 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="RLD_P1_Phone" placeholder="Phone Number of Participant">
 			</div>
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="RLD_P1_Std" placeholder="Class of Participant">
+			</div>
+			<br>
+			<br>
 			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
 			<button onclick="SwitchN()" class="frmbtn button">Next</button>
 		</div>
@@ -414,7 +508,10 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="FDWBE_P1_Phone" placeholder="Phone Number of First Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="FDWBE_P1_Std" placeholder="Class of First Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
 				<input type="text" id="FDWBE_P2_Name" placeholder="Name of Second Participant">
@@ -427,7 +524,10 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="FDWBE_P2_Phone" placeholder="Phone Number of Second Participant">
 			</div>
-
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="FDWBE_P2_Std" placeholder="Class of Second Participant">
+			</div>
 			<div class="input-wrap">
 				<i class="fal fa-user"></i>
 				<input type="text" id="FDWBE_P3_Name" placeholder="Name of Third Participant">
@@ -440,65 +540,343 @@
 				<i class="fal fa-phone-alt"></i>
 				<input type="text" id="FDWBE_P3_Phone" placeholder="Phone Number of Third Participant">
 			</div>
+			<div class="input-wrap">
+				<i class="fal fa-users-class"></i>
+				<input type="text" id="FDWBE_P3_Std" placeholder="Class of Third Participant">
+			</div>
+			<br>
+			<br>
 			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
 			<button onclick="SwitchN()" class="frmbtn button">Next</button>
 		</div>
 
 		<div class="form-fields event9" style="display: none;">
-			<h1>Rise</h1>
-			<div class="input-wrap">
-				<i class="fal fa-user"></i>
-				<input type="text" id="RISE_P1_Name" placeholder="Name of First Participant">
+			<h3>RISE</h3>
+			<div class="GiveRiseTeamNumber">
+				<!-- <input type="text" class="InputRiseTeamNumber" placeholder="Number of Teams Participating in Rise"> -->
+				<span>Select Number of Teams:</span>
+				<br>
+				<br>
+				<div class="box">
+					<select name="InputRiseTeamNumber" id="InputRiseTeamNumber">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</div>	
+				<br>
+				<br>
+				<button id="Enter" class="frmbtn button" onclick="EnterRiseTeamLength()">Next</button>
 			</div>
-			<div class="input-wrap">
-				<i class="fal fa-envelope-open"></i>
-				<input type="text" id="RISE_P1_Mail" placeholder="E-mail of First Participant">
+			<div class="RiseTeam1" style="display:none;">
+				<h4>Team 1</h4>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T1_P1_Name" placeholder="Name of First Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T1_P1_Mail" placeholder="E-mail of First Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T1_P1_Phone" placeholder="Phone Number of First Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T1_P1_Std" placeholder="Class of First Participant">
+				</div>
+				<br>
+				<br>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T1_P2_Name" placeholder="Name of Second Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T1_P2_Mail" placeholder="E-mail of Second Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T1_P2_Phone" placeholder="Phone Number of Second Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T1_P2_Std" placeholder="Class of Second Participant">
+				</div>
+				<br>
+				<br>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T1_P3_Name" placeholder="Name of Third Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T1_P3_Mail" placeholder="E-mail of Third Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T1_P3_Phone" placeholder="Phone Number of Third Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T1_P3_Std" placeholder="Class of Third Participant">
+				</div>
+				<br>
+				<br>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T1_P4_Name" placeholder="Name of Fourth Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T1_P4_Mail" placeholder="E-mail of Fourth Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T1_P4_Phone" placeholder="Phone Number of Fourth Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T1_P4_Std" placeholder="Class of Fourth Participant">
+				</div>
 			</div>
-			<div class="input-wrap">
-				<i class="fal fa-phone-alt"></i>
-				<input type="text" id="RISE_P1_Phone" placeholder="Phone Number of First Participant">
+			<br>
+			<br>
+			<!-- ========================================================= -->
+			<div class="RiseTeam2" style="display:none;">
+				<h4>Team 2</h4>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T2_P1_Name" placeholder="Name of First Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T2_P1_Mail" placeholder="E-mail of First Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T2_P1_Phone" placeholder="Phone Number of First Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T2_P1_Std" placeholder="Class of First Participant">
+				</div>
+				<br>
+				<br>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T2_P2_Name" placeholder="Name of Second Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T2_P2_Mail" placeholder="E-mail of Second Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T2_P2_Phone" placeholder="Phone Number of Second Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T2_P2_Std" placeholder="Class of Second Participant">
+				</div>
+				<br>
+				<br>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T2_P3_Name" placeholder="Name of Third Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T2_P3_Mail" placeholder="E-mail of Third Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T2_P3_Phone" placeholder="Phone Number of Third Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T2_P3_Std" placeholder="Class of Third Participant">
+				</div>
+				<br>
+				<br>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T2_P4_Name" placeholder="Name of Fourth Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T2_P4_Mail" placeholder="E-mail of Fourth Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T2_P4_Phone" placeholder="Phone Number of Fourth Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T2_P4_Std" placeholder="Class of Fourth Participant">
+				</div>
+				<br>
+				<br>
 			</div>
-
-			<div class="input-wrap">
-				<i class="fal fa-user"></i>
-				<input type="text" id="RISE_P2_Name" placeholder="Name of Second Participant">
+			<!-- ========================================================= -->
+			<div class="RiseTeam3" style="display:none;">
+				<h4>Team 3</h4>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T3_P1_Name" placeholder="Name of First Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T3_P1_Mail" placeholder="E-mail of First Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T3_P1_Phone" placeholder="Phone Number of First Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T3_P1_Std" placeholder="Class of First Participant">
+				</div>
+				<br>
+				<br>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T3_P2_Name" placeholder="Name of Second Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T3_P2_Mail" placeholder="E-mail of Second Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T3_P2_Phone" placeholder="Phone Number of Second Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T3_P2_Std" placeholder="Class of Second Participant">
+				</div>
+				<br>
+				<br>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T3_P3_Name" placeholder="Name of Third Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T3_P3_Mail" placeholder="E-mail of Third Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T3_P3_Phone" placeholder="Phone Number of Third Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T3_P3_Std" placeholder="Class of Third Participant">
+				</div>
+				<br>
+				<br>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T3_P4_Name" placeholder="Name of Fourth Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T3_P4_Mail" placeholder="E-mail of Fourth Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T3_P4_Phone" placeholder="Phone Number of Fourth Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T3_P4_Std" placeholder="Class of Fourth Participant">
+				</div>
+				<br>
+				<br>
 			</div>
-			<div class="input-wrap">
-				<i class="fal fa-envelope-open"></i>
-				<input type="text" id="RISE_P2_Mail" placeholder="E-mail of Second Participant">
+			<!-- ========================================================= -->
+			<div class="RiseTeam4" style="display:none;">
+				<h4>Team 4</h4>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T4_P1_Name" placeholder="Name of First Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T4_P1_Mail" placeholder="E-mail of First Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T4_P1_Phone" placeholder="Phone Number of First Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T4_P1_Std" placeholder="Class of First Participant">
+				</div>
+				<br>
+				<br>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T4_P2_Name" placeholder="Name of Second Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T4_P2_Mail" placeholder="E-mail of Second Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T4_P2_Phone" placeholder="Phone Number of Second Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T4_P2_Std" placeholder="Class of Second Participant">
+				</div>
+				<br>
+				<br>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T4_P3_Name" placeholder="Name of Third Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T4_P3_Mail" placeholder="E-mail of Third Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T4_P3_Phone" placeholder="Phone Number of Third Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T4_P3_Std" placeholder="Class of Third Participant">
+				</div>
+				<br>
+				<br>
+				<div class="input-wrap">
+					<i class="fal fa-user"></i>
+					<input type="text" id="RISE_T4_P4_Name" placeholder="Name of Fourth Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-envelope-open"></i>
+					<input type="text" id="RISE_T4_P4_Mail" placeholder="E-mail of Fourth Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-phone-alt"></i>
+					<input type="text" id="RISE_T4_P4_Phone" placeholder="Phone Number of Fourth Participant">
+				</div>
+				<div class="input-wrap">
+					<i class="fal fa-users-class"></i>
+					<input type="text" id="RISE_T4_P4_Std" placeholder="Class of Fourth Participant">
+				</div>
+				<br>
+				<br>
 			</div>
-			<div class="input-wrap">
-				<i class="fal fa-phone-alt"></i>
-				<input type="text" id="RISE_P2_Phone" placeholder="Phone Number of Second Participant">
-			</div>
-
-			<div class="input-wrap">
-				<i class="fal fa-user"></i>
-				<input type="text" id="RISE_P3_Name" placeholder="Name of Third Participant">
-			</div>
-			<div class="input-wrap">
-				<i class="fal fa-envelope-open"></i>
-				<input type="text" id="RISE_P3_Mail" placeholder="E-mail of Third Participant">
-			</div>
-			<div class="input-wrap">
-				<i class="fal fa-phone-alt"></i>
-				<input type="text" id="RISE_P3_Phone" placeholder="Phone Number of Third Participant">
-			</div>
-
-			<div class="input-wrap">
-				<i class="fal fa-user"></i>
-				<input type="text" id="RISE_P4_Name" placeholder="Name of Fourth Participant">
-			</div>
-			<div class="input-wrap">
-				<i class="fal fa-envelope-open"></i>
-				<input type="text" id="RISE_P4_Mail" placeholder="E-mail of Fourth Participant">
-			</div>
-			<div class="input-wrap">
-				<i class="fal fa-phone-alt"></i>
-				<input type="text" id="RISE_P4_Phone" placeholder="Phone Number of Fourth Participant">
-			</div>
-			<button onclick="SwitchP()" class="frmbtn button">Previous</button>
-			<button onclick="SwitchN()" class="frmbtn button">Next</button>
+			<center class="BTTNS" style="display: none;">
+				<!-- <button onclick="BackToTeamNumberSelection()" style="display: none;" class="frmbtn BTTNS button">Back To Team Number Selection</button> -->
+				<button onclick="BackToTeamNumberSelection()" class="frmbtn BTTNSp button">Previous</button>
+				<button onclick="SwitchN()" class="frmbtn BTTNSn button">Next</button>
+			</center>
 		</div>
 
 		<div class="form-fields event10" style="display: none;">

@@ -27,6 +27,7 @@ body{
     position: absolute;
     color: white;
     width: 25vw;
+    position: fixed;
 }
 
 .form-landing-img-left > img{
@@ -42,6 +43,7 @@ body{
     position: absolute;
     color: white;
     width: 25vw;
+    position: fixed;
 
 }
 
@@ -68,9 +70,22 @@ h2{
     padding: 2%;
     margin: 0;
 }
+h3{
+    font-family: manrope-bold;
+    font-size: 3rem;
+    padding: 2%;
+    margin: 0;
+}
+h4{
+    font-family: manrope-bold;
+    font-size: 2rem;
+    padding: 2%;
+    margin: 0;
+}
 
 .form-fields{
-    width: 800px;
+    height: 70vh;
+    width: 100%;
     padding-top: 5%;
     margin: 0;
 }
@@ -131,7 +146,7 @@ input::placeholder{
 
 .flex-parent{
     display: flex;
-    width: 90%;
+    width: 100%;
 }
 
 @media screen and (max-width:900px){
@@ -160,3 +175,50 @@ input::placeholder{
         width: 100%;
     }
 }
+
+.box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.box select {
+    background-color: #2b010f;
+    color: white;
+    padding: 12px;
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 8px 8px #00000033;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+    padding: 30px;
+}
+
+
