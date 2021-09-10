@@ -28,19 +28,12 @@ document.getElementById("submit").onclick = () => {
 	// events are kept in reverse order as firebase reverses them in the right order
 	/* Rise */
 	let event = AllEvents.child("Rise");
-<<<<<<< HEAD
 	let team = event.child("Team 1");
 	team.child("Participant 1").set({
 		"Name": document.getElementById("RISE_T1_P1_Name").value,
 		"Email": document.getElementById("RISE_T1_P1_Mail").value,
 		"Phone_Number": document.getElementById("RISE_T1_P1_Phone").value,
 		"Standard": document.getElementById("RISE_T1_P1_Std").value,
-=======
-	event.child("Participant 1").set({
-		"Name":document.getElementById("RISE_P1_Name").value,
-		"Email":document.getElementById("RISE_P1_Mail").value,
-		"Phone_Number":document.getElementById("RISE_P1_Phone").value,
->>>>>>> add933778e0d19266ce6ab7ed4397f602bc3bde5
 
 	});
 
@@ -462,7 +455,6 @@ let toCheck = () => {
 }
 
 let toMain = () => {
-<<<<<<< HEAD
 	document.querySelector(".checkboxes").style.display = "none";
 	document.querySelector(".mainRegister").style.display = "block";
 }
@@ -487,8 +479,3 @@ let BackToTeamNumberSelection = () =>{
 		})
 	}
 }
-=======
-    document.querySelector(".checkboxes").style.display = "none";
-    document.querySelector(".mainRegister").style.display = "block";
-}
->>>>>>> add933778e0d19266ce6ab7ed4397f602bc3bde5
