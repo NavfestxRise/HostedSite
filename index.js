@@ -147,7 +147,10 @@ document.getElementById("submit").onclick = () => {
 		Phone_Number: document.getElementById("RISE_T4_P4_Phone").value,
 		Standard: document.getElementById("RISE_T4_P4_Std").value,
 	});
-	event.child("Domain").set(document.getElementById("Domain").value)
+	event.child("Domain_Team_1").set(document.getElementById("Domain1").value)
+	event.child("Domain_Team_2").set(document.getElementById("Domain2").value)
+	event.child("Domain_Team_3").set(document.getElementById("Domain3").value)
+	event.child("Domain_Team_4").set(document.getElementById("Domain4").value)
 
 	/* event 8*/
 	event = AllEvents.child("FROM DAEDALUS’ WORKSHOP:Building Empires");

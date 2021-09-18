@@ -186,7 +186,7 @@ input::placeholder{
     background-color: #2b010f;
     color: white;
     padding: 12px;
-    width: 250px;
+    width: 350px;
     border: none;
     font-size: 20px;
     box-shadow: 0 8px 8px #00000033;
@@ -202,7 +202,7 @@ input::placeholder{
     z-index: 2;
     top: 0;
     right: 0;
-    width: 20%;
+    width: 12%;
     height: 100%;
     text-align: center;
     font-size: 28px;

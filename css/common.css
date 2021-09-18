@@ -17,14 +17,18 @@ body{
     overflow-x: hidden;
 }
 .nav-landing{
-    height: 100vh;
-    background: url(/med/trial.png) #2b010f;
+    height: 120vh;
+    background: url(/med/just-bg.jpg) #2b010f;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.nav-landing > img{
+    width: 60%;
 }
 
 .svg-color svg{
@@ -42,15 +46,15 @@ body{
 }
 .front{
     z-index: 2;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 .back{
     z-index: 1;
 }
 .back, .front{
     position: absolute;
-    top: calc(300px - 113px);
-    transform: translateY(-113px);
+    top: calc(300px - 130px);
+    transform: translateY(-130px);
 }
 .nav-event-flex:hover .front{
     opacity: 0;
