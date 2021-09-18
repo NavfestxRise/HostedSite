@@ -422,7 +422,7 @@ let Alert = (field, msg) => {
 let toCheck = () => {
 	let field, cfield;
 	let b = 0;
-	for (let i = 0; i <= document.querySelector(".mainRegister").childNodes.length; i++) {
+	for (let i = 0; i <= document.querySelector(".mainRegister").childNodes.length-1; i++) {
 		field = document.querySelector(".mainRegister").childNodes[i]
 		if (b == 1)
 			break;
@@ -436,25 +436,26 @@ let toCheck = () => {
 				document.querySelector(".checkboxes").style.display = "block";
 			}
 		} else if (field.tagName == "DIV") {
-			for (let j = 0; j <= field.childNodes.length; j++) {
+			for (let j = 0; j <= field.childNodes.length-1; j++) {
 				cfield = field.childNodes[j];
 				if (cfield != null)
 					if (cfield.tagName == "INPUT") {
 						if (cfield.value == "") {
-							console.log("foo")
 							alert("Please fill out all the fields in the form.");
 							b = 1
 							break;
 						}
 						else {
-							document.querySelector(".mainRegister").style.display = "none";
-							document.querySelector(".checkboxes").style.display = "block";
 						}
 					}
 			};
-			break
 		}
 	};
+
+	if (b==0){
+		document.querySelector(".mainRegister").style.display = "none";
+		document.querySelector(".checkboxes").style.display = "block";
+	}
 }
 
 let toMain = () => {
