@@ -15,7 +15,7 @@ const database = firebase.database();
 
 let user = firebase.auth().signInAnonymously();
 let users_root = database.ref("/Participants");
-
+let givenTeamNumber = false;
 
 let checked = [];
 let current = 0;
@@ -102,7 +102,6 @@ document.getElementById("submit").onclick = () => {
 		"Email": document.getElementById("RISE_T3_P2_Mail").value,
 		"Phone_Number": document.getElementById("RISE_T3_P2_Phone").value,
 		"Standard": document.getElementById("RISE_T3_P2_Std").value,
-
 	});
 
 	team.child("Participant 3").set({
@@ -110,14 +109,12 @@ document.getElementById("submit").onclick = () => {
 		"Email": document.getElementById("RISE_T3_P3_Mail").value,
 		"Phone_Number": document.getElementById("RISE_T3_P3_Phone").value,
 		"Standard": document.getElementById("RISE_T3_P3_Std").value,
-
 	});
 	team.child("Participant 4").set({
 		"Name": document.getElementById("RISE_T3_P4_Name").value,
 		"Email": document.getElementById("RISE_T3_P4_Mail").value,
 		"Phone_Number": document.getElementById("RISE_T3_P4_Phone").value,
 		"Standard": document.getElementById("RISE_T3_P4_Std").value,
-
 	});
 
 	team = event.child("Team 4");
@@ -337,11 +334,39 @@ document.getElementById("submit").onclick = () => {
 
 let SwitchN = () => {
 	checked;
-	console.log(current);
 	let field, cfield;
 	let b = 0;
+	let c = 0;
+	if(givenTeamNumber){
+		let numberOfRiseTeams = Number(document.querySelector("#InputRiseTeamNumber").value);
+		for(let i=1; i<=numberOfRiseTeams; i++){
+			for(let j=1; j<=4; j++){
+				if(c == 0){
+					if (document.querySelector("#RISE_T" + i + "_P" + j + "_Name").value == "" && c == 0){
+						alert("Please fill out all the fields");
+						c = 1;
+					}
+					if (document.querySelector("#RISE_T" + i + "_P" + j + "_Mail").value == "" && c == 0) {
+						alert("Please fill out all the fields");
+						c = 1;
+					}
+					if (document.querySelector("#RISE_T" + i + "_P" + j + "_Phone").value == "" && c == 0) {
+						alert("Please fill out all the fields");
+						c = 1;
+					}
+					if (document.querySelector("#RISE_T" + i + "_P" + j + "_Std").value == "" && c == 0) {
+						alert("Please fill out all the fields");
+						c = 1;
+					}
+				}
+			}
+		}
+	}
+	
+
 	for (k of checked) {
-		for (let i = 0; i <= document.querySelector(".event" + checked[current]).childNodes.length; i++) {
+		for (let i = 0; i <= document.querySelector(".event" + checked[current]).childNodes.length-1; i++) {
+			console.log(checked, current, checked[current], document.querySelector(".event" + checked[current]).childNodes[i])
 			field = document.querySelector(".event" + checked[current]).childNodes[i]
 			if (b == 1)
 				return;
@@ -371,13 +396,14 @@ let SwitchN = () => {
 							}
 						}
 				};
-				break
 			}
 		};
 	};
-	document.querySelector(".event" + checked[current]).style.display = "none";
-	current++;
-	document.querySelector(".event" + checked[current]).style.display = "block";
+	if(b==0 && c==0){
+		document.querySelector(".event" + checked[current]).style.display = "none";
+		current++;
+		document.querySelector(".event" + checked[current]).style.display = "block";
+	}
 }
 
 let SwitchP = () => {
@@ -401,7 +427,6 @@ let toEvents = () => {
 		j++;
 	})
 	checked.push(10);
-	console.log(checked)
 	document.querySelector(".checkboxes").style.display = "none";
 	document.querySelector(".event" + checked[current]).style.display = "block";
 }
@@ -471,6 +496,7 @@ let EnterRiseTeamLength = ()=>{
 	for (let i = 1; i <= Number(document.querySelector("#InputRiseTeamNumber").value); i++){
 		  document.querySelector(".RiseTeam" + i).style.display = "block";
 	}
+	givenTeamNumber = true;
 
 };
 
@@ -482,4 +508,5 @@ let BackToTeamNumberSelection = () =>{
 			elem.style.display = "none"
 		})
 	}
+	givenTeamNumber = false;
 }
