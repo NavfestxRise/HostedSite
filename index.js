@@ -16,7 +16,7 @@ const database = firebase.database();
 let user = firebase.auth().signInAnonymously();
 let users_root = database.ref("/Participants");
 let givenTeamNumber = false;
-
+let EmailValidator = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 let checked = [];
 let current = 0;
 
@@ -358,6 +358,10 @@ let SwitchN = () => {
 						alert("Please fill out all the fields");
 						c = 1;
 					}
+					if (!EmailValidator.test(String(document.querySelector("#RISE_T" + i + "_P" + j + "_Mail").value).toLowerCase()) && c == 0) {
+						alert("Please enter a valid email address!");
+						c = 1;
+					}
 				}
 			}
 		}
@@ -391,9 +395,12 @@ let SwitchN = () => {
 								b = 1;
 								break;
 							}
-							else {
-
-							}
+							
+							if (cfield.id.includes("_Mail"))
+								if (!EmailValidator.test(String(cfield.value).toLowerCase())) {
+									alert("Please enter a valid email address!");
+									b = 1;
+								}
 						}
 				};
 			}
@@ -470,8 +477,11 @@ let toCheck = () => {
 							b = 1
 							break;
 						}
-						else {
-						}
+						if (cfield.id.includes("_Email"))
+							if (!EmailValidator.test(String(cfield.value).toLowerCase())){
+								alert("Please enter a valid email address!");
+								b = 1;
+							}
 					}
 			};
 		}
