@@ -343,19 +343,19 @@ let SwitchN = () => {
 			for(let j=1; j<=4; j++){
 				if(c == 0){
 					if (document.querySelector("#RISE_T" + i + "_P" + j + "_Name").value == "" && c == 0){
-						alert("Please fill out all the fields");
+						alert("Please fill out all the fields f");
 						c = 1;
 					}
 					if (document.querySelector("#RISE_T" + i + "_P" + j + "_Mail").value == "" && c == 0) {
-						alert("Please fill out all the fields");
+						alert("Please fill out all the fields f");
 						c = 1;
 					}
 					if (document.querySelector("#RISE_T" + i + "_P" + j + "_Phone").value == "" && c == 0) {
-						alert("Please fill out all the fields");
+						alert("Please fill out all the fields f");
 						c = 1;
 					}
 					if (document.querySelector("#RISE_T" + i + "_P" + j + "_Std").value == "" && c == 0) {
-						alert("Please fill out all the fields");
+						alert("Please fill out all the fields f");
 						c = 1;
 					}
 					if (!EmailValidator.test(String(document.querySelector("#RISE_T" + i + "_P" + j + "_Mail").value).toLowerCase()) && c == 0) {
@@ -390,7 +390,7 @@ let SwitchN = () => {
 					if (cfield != null)
 						if (cfield.tagName == "INPUT") {
 							if (cfield.value == "") {
-								console.log("foo")
+								console.log(cfield)
 								alert("Please fill out all the fields.");
 								b = 1;
 								break;
@@ -421,6 +421,13 @@ let SwitchP = () => {
 	}
 	else
 		document.querySelector(".checkboxes").style.display = "block";
+}
+
+
+let SkipRise = () => {
+	console.log(checked);
+	givenTeamNumber = false;
+	SwitchN();
 }
 
 let toEvents = () => {
@@ -520,3 +527,4 @@ let BackToTeamNumberSelection = () =>{
 	}
 	givenTeamNumber = false;
 }
+
