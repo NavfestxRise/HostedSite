@@ -16,7 +16,8 @@ const database = firebase.database();
 let user = firebase.auth().signInAnonymously();
 let users_root = database.ref("/Participants");
 let givenTeamNumber = false;
-let EmailValidator = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+let EmailValidator = /[^0-9< ][A-z0-9_]+([.][A-z0-9_]+)*@[A-z0-9_]+([.][A-z0-9_]+)*[.][A-z]{2,4}/
+let ValidEmailCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@_-!#$%&'*+-/=?^_`{|}~.\"(),: ;<>@[\\]\'"
 let checked = [];
 let current = 0;
 
