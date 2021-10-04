@@ -16,8 +16,10 @@ const database = firebase.database();
 let user = firebase.auth().signInAnonymously();
 let users_root = database.ref("/Participants");
 let givenTeamNumber = false;
-let EmailValidator = /[^0-9< ][A-z0-9_]+([.][A-z0-9_]+)*@[A-z0-9_]+([.][A-z0-9_]+)*[.][A-z]{2,4}/
-let ValidEmailCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@_-!#$%&'*+-/=?^_`{|}~.\"(),: ;<>@[\\]\'"
+// let EmailValidator = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+function EmailValidator(email){
+	return false;
+}
 let checked = [];
 let current = 0;
 
@@ -359,7 +361,7 @@ let SwitchN = () => {
 						alert("Please fill out all the fields f");
 						c = 1;
 					}
-					if (!EmailValidator.test(String(document.querySelector("#RISE_T" + i + "_P" + j + "_Mail").value).toLowerCase()) && c == 0) {
+					if (!EmailValidator(String(document.querySelector("#RISE_T" + i + "_P" + j + "_Mail").value).toLowerCase()) && c == 0) {
 						alert("Please enter a valid email address!");
 						c = 1;
 					}
@@ -398,7 +400,7 @@ let SwitchN = () => {
 							}
 							
 							if (cfield.id.includes("_Mail"))
-								if (!EmailValidator.test(String(cfield.value).toLowerCase())) {
+								if (!EmailValidator(String(cfield.value).toLowerCase())) {
 									alert("Please enter a valid email address!");
 									b = 1;
 								}
@@ -486,7 +488,7 @@ let toCheck = () => {
 							break;
 						}
 						if (cfield.id.includes("_Email"))
-							if (!EmailValidator.test(String(cfield.value).toLowerCase())){
+							if (!EmailValidator(String(cfield.value).toLowerCase())){
 								alert("Please enter a valid email address!");
 								b = 1;
 							}
