@@ -18,7 +18,7 @@ let users_root = database.ref("/Participants");
 let givenTeamNumber = false;
 // let EmailValidator = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 function EmailValidator(email){
-	return false;
+	return true;
 }
 let checked = [];
 let current = 0;
